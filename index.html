@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeTopanda</title>
+    <!-- CSS only -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/sanelogodev.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="app">
+
+        <navbar-component :auth="auth"></navbar-component>
+
+        <header class="page-header d-flex align-items-center">
+            <div class="container">
+                <h1 class="fw-bold"> {{ subject }} </h1>
+                <h2>{{ title }} </h2>
+            </div>
+        </header>
+
+        <section class="container">
+            <div class="row justify-content-center">
+                <section class="col-12 col-md-8">
+                    <img src="assets/images/CTPLOGO.png" class="avatar" alt="">
+                    <div class="input-group mb-3">
+                        <!-- <input type="text" class="form-control" placeholder="ค้นหาบทความ... ดิจิทัล, Python, C " aria-label="ค้นหาบทความ" aria-describedby="basic-addon1">
+                        <span class="input-group-text btn-outline-info" id="basuc-addon1">
+                            <i class="fas fa-search"></i>
+                        </span> -->
+                    </div>
+                </section>
+            </div>
+            <div class="row py-5 g-3">
+                <section class="col-12 pb-3 text-center">
+                    <h3>วิดีโอล่าสุด</h3>
+                </section>
+                <blog-component v-for="blog in blogs" :key="blog.blog_id" :blog="blog"></blog-component>
+            </div>
+        </section>
+
+        <footer-component></footer-component>
+
+
+
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/http-vue-loader@1.4.2/src/httpVueLoader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        const AUTH_DATA = localStorage.getItem('auth_data')
+        const AUTH_TOKEN = localStorage.getItem('auth_token')
+
+        new Vue({
+            el: "#app",
+            components: {
+                'navbar-component': httpVueLoader('./components/navbar.vue'),
+                'blog-component': httpVueLoader('./components/blog.vue'),
+                'footer-component': httpVueLoader('./components/footer.vue')
+            },
+            data() {
+                return {
+                    subject: "codetopanda",
+                    title: "pandasite",
+                    blogs: null,
+                    auth: {
+                        token: AUTH_TOKEN,
+                        data: AUTH_DATA
+                    }
+                }
+            },
+            mounted() {
+                this.getBlogs()
+            },
+            methods: {
+                getBlogs() {
+                    var vm = this
+                    axios({
+                        method: 'GET',
+                        url: 'blog.json'
+                    }).then(function (resp) {
+                        vm.blogs = resp.data.response
+                    }).catch((err) => {
+                        console.log(err)
+                    })
+                }
+            }
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

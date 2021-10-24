@@ -1,0 +1,76 @@
+{
+    "response": [{
+        "blog_id": 1,
+        "subject": "01 วิธีการติดตั้ง Python IDLE",
+        "subtitle": "การติดตั้ง IDLE ของ Python จาก python.org",
+        "image": "http://i3.ytimg.com/vi/_X0ZtSt6VYo/hqdefault.jpg",
+        "link" : "./blog-detail.html"
+    },{
+        "blog_id": 2,
+        "subject": "Python Series 02-Operator",
+        "subtitle": "ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ Operator ซึ่งเป็นตัวดำเนินการต่างๆ ในทางคณิตศาสตร์ นอกจากนั้นยังมีการใช้ตัวแปร การจัดการกับตัวแปร การประกาศตัวแปร และ การกำหนดค่าให้กับตัวแปร",
+        "image": "http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=3x0FySSruQw"
+    },{
+        "blog_id": 3,
+        "subject": "Python Series 03-Functions",
+        "subtitle": "ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ การเขียนโปรแกรมเชิงฟังก์ชัน ฟังก์ชันนี้จะช่วยให้เราพัฒนาโปรแกรมได้ง่ายขึ้น นั่นคือการแยกส่วนการทำงานต่างๆ แยกย่อยเป็นฟังก์ชันๆ ไป สรุปง่ายๆก็คือฟังก์ชันหนึ่งตัวจะมีหน้าที่เฉพาะของมันนั่นเอง",
+        "image": "http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=yGAtOvuVy_A&t=26s"
+    },{
+        "blog_id": 4,
+        "subject": "Python Series 04 Controls",
+        "subtitle": "ในบทความนี้จะเป็น การเขียนโปรแกรมด้วยภาษา Python ในหัวข้อ การสร้างนิพจน์ทางตรรกศาสตร์ if else และ elif รวมไปถึงคำสั่งยิบย่อยต่างๆ",
+        "image": "http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=4MWi3n_lWyY"
+    },{
+        "blog_id": 5,
+        "subject": "Python Series 05_List_Part01",
+        "subtitle": "ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list หรือ รายการนะครับ",
+        "image": "http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=VFpbIfT9zkg"
+    },{
+        "blog_id": 6,
+        "subject": "Python Series 05_List_Part02",
+        "subtitle": "ในส่วนของบทความนี้นะครับ จะเป็นการเขียนโปรแกรมด้วยภาษาPython ในหัวข้อ list เช่รเดิมนะครับ จะเป็น part 2 ในวิดีโอนี้จะพาเพื่อนๆมา ตะลุยในส่วนของ คำสั่ง for loop เพื่อดำเนินการเกี่ยวกับ list นะครับ",
+        "image": "http://i3.ytimg.com/vi/SxwHACP5jcs/maxresdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=CqMyIstC_IE&t=13s"
+    },{
+        "blog_id": 7,
+        "subject": "การลง Visual Studio 2019 และ สร้างโปรเจค คร่าวๆ",
+        "subtitle": "การลง Visual Studio 2019 และ สร้างโปรเจค คร่าวๆ",
+        "image": "http://i3.ytimg.com/vi/6HxQK5mrkf8/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=6HxQK5mrkf8&t=178s"
+    },{
+        "blog_id": 8,
+        "subject": "Mathlab GUI RGB Extract Meet รอบค่ำ.",
+        "subtitle": "จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Digital Image Processing",
+        "image": "http://i3.ytimg.com/vi/x_3s5Fue58Y/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=x_3s5Fue58Y&t=14s"
+    },{
+        "blog_id": 9,
+        "subject": "Digital Image Processing 01 RGB Extract",
+        "subtitle": "จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Digital Image Processing",
+        "image": "http://i3.ytimg.com/vi/KtPJaGI6O_A/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=KtPJaGI6O_A&t=2s"
+    },{
+        "blog_id": 10,
+        "subject": "Digital Image Processing 02 RGB2Gray",
+        "subtitle": "จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Digital Image Processing",
+        "image": "http://i3.ytimg.com/vi/LS17BNrnjDQ/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=LS17BNrnjDQ&t=10s"
+    },{
+        "blog_id": 11,
+        "subject": "Digital Image Processing 03 Pop up menu, List box for show Average and Blur",
+        "subtitle": "จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Digital Image Processing",
+        "image": "http://i3.ytimg.com/vi/ajgzXYUVbhw/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=ajgzXYUVbhw&t=2s"
+    },{
+        "blog_id": 12,
+        "subject": "Ubuntu Server + apache2",
+        "subtitle": "จัดทำขึ้นเพื่อเป็นส่วนหนึ่งของรายวิชา Operating System",
+        "image": "http://i3.ytimg.com/vi/P9_TxAYZ20E/hqdefault.jpg",
+        "link" : "https://www.youtube.com/watch?v=P9_TxAYZ20E&t=1004s"
+    }]
+    
+}
