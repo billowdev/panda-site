@@ -21,10 +21,10 @@
             <a class="nav-link" href="./">codetopanda's blog</a>
           </li>
           <li class="nav-item px-3 px-md-0" v-if="!auth.data">
-            <a class="nav-link" href="register.php">สมัครสมาชิก</a>
+            <a class="nav-link" href="register.html">สมัครสมาชิก</a>
           </li>
           <li class="nav-item px-3 px-md-0" v-if="!auth.data">
-            <a class="nav-link" href="login.php">เข้าสู่ระบบ</a>
+            <a class="nav-link" href="login.html">เข้าสู่ระบบ</a>
           </li>
 
           <li class="nav-item dropdown" v-if="auth.data">
